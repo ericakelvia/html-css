@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: rgba(211, 211, 211, 0.288);
+            /*border: 1px solid black;*/
+            border-radius: 6px;
+            box-shadow: 2px 2px 3px;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        .especial {
+            text-align: left;
+        }
+
+        div:hover {
+            background-color: yellow;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: inline;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        Amor
+        <ul class="especial">
+            <li>companheirismo</li>
+            <li>renúncia</li>
+            <li>cuidado</li>
+        </ul>
+        <p>JESUS é o caminho</p>
+    </div>
+    <div id="d2">
+        Paciência
+        <ul class="especial">
+            <li>calmaria</li>
+            <li>equilíbrio</li>
+            <li>serenidade</li>
+        </ul>
+        <p>a verdade e a vida</p>
+    </div>
+    <div id="d3">
+        Humildade
+        <ul class="especial">
+            <li>simplicidade</li>
+            <li>naturalidade</li>
+            <li>singeleza</li>
+        </ul>
+        <p>Ninguém vê ao pai sem Ele</p>
+    </div>
+</body>
+</html>
