@@ -10,19 +10,44 @@
             background-color: black;
         }
 
-        h1{
+        header > h1 {
+            margin: auto;
+            max-width: 630px;
             background-color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 50px;
         }
+
+        main {
+            text-align: center;            
+        }
+
+        main > div {
+            display: inline-block;
+            margin: 15px;
+        }
+
+        main > div:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Vídeos legais para assistir</h1>
-    <a href="pag02.html" target="_self" rel="next"><img src="desafio 9/html5.jpg" alt="curso html5"></a> 
+    <header>
+        <h1>Vídeos legais para assistir</h1>
+    </header>
+    <main>
+        <div class="video"><a href="pag02.html" target="_self" rel="next"><img src="desafio 9/html5.jpg" alt="curso html5"></a></div>
 
-    <a href="python/pag03.html" target="_self" rel="next"><img src="desafio 9/python.jpg" alt="curso python"></a>
-    
-    <br><a href="php/pag04.html" target="_self" rel="next"><img src="desafio 9/php.jpg" alt="curso php"></a>
+        <div class="video"><a href="python/pag03.html" target="_self" rel="next"><img src="desafio 9/python.jpg" alt="curso python"></a></div>
 
-    <a href="javascript/pag05.html" target="_self" rel="next"><img src="desafio 9/javascript.jpg" alt="curso javascript"></a>
+        <br>
+        
+        <div class="video"><a href="php/pag04.html" target="_self" rel="next"><img src="desafio 9/php.jpg" alt="curso php"></a></div>
+        
+        <div class="video"><a href="javascript/pag05.html" target="_self" rel="next"><img src="desafio 9/javascript.jpg" alt="curso javascript"></a></div>
+    </main>
 </body>
 </html>
