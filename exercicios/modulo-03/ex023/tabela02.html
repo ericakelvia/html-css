@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
 
         td.num {
@@ -32,9 +50,10 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -147,9 +166,22 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>210.147.125</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quibusdam! Incidunt corporis voluptatibus cumque, temporibus repellendus saepe officia voluptas nesciunt facilis facere doloribus sint quam nisi laudantium dolor veniam cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio itaque, ipsum rem aperiam voluptatum at nostrum adipisci veniam vitae esse quis officia est culpa ipsam libero natus? Maxime, ratione quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam ad dolore reiciendis, harum sapiente minima saepe quia ut itaque autem blanditiis labore cum porro, expedita nihil esse sit ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos inventore odio fuga aliquam fugiat, dolore optio qui voluptate, aperiam perferendis assumenda reiciendis amet repudiandae consectetur cumque nam iusto? A, mollitia.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quibusdam! Incidunt corporis voluptatibus cumque, temporibus repellendus saepe officia voluptas nesciunt facilis facere doloribus sint quam nisi laudantium dolor veniam cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio itaque, ipsum rem aperiam voluptatum at nostrum adipisci veniam vitae esse quis officia est culpa ipsam libero natus? Maxime, ratione quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam ad dolore reiciendis, harum sapiente minima saepe quia ut itaque autem blanditiis labore cum porro, expedita nihil esse sit ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos inventore odio fuga aliquam fugiat, dolore optio qui voluptate, aperiam perferendis assumenda reiciendis amet repudiandae consectetur cumque nam iusto? A, mollitia.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quibusdam! Incidunt corporis voluptatibus cumque, temporibus repellendus saepe officia voluptas nesciunt facilis facere doloribus sint quam nisi laudantium dolor veniam cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio itaque, ipsum rem aperiam voluptatum at nostrum adipisci veniam vitae esse quis officia est culpa ipsam libero natus? Maxime, ratione quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam ad dolore reiciendis, harum sapiente minima saepe quia ut itaque autem blanditiis labore cum porro, expedita nihil esse sit ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos inventore odio fuga aliquam fugiat, dolore optio qui voluptate, aperiam perferendis assumenda reiciendis amet repudiandae consectetur cumque nam iusto? A, mollitia.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quibusdam! Incidunt corporis voluptatibus cumque, temporibus repellendus saepe officia voluptas nesciunt facilis facere doloribus sint quam nisi laudantium dolor veniam cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio itaque, ipsum rem aperiam voluptatum at nostrum adipisci veniam vitae esse quis officia est culpa ipsam libero natus? Maxime, ratione quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam ad dolore reiciendis, harum sapiente minima saepe quia ut itaque autem blanditiis labore cum porro, expedita nihil esse sit ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos inventore odio fuga aliquam fugiat, dolore optio qui voluptate, aperiam perferendis assumenda reiciendis amet repudiandae consectetur cumque nam iusto? A, mollitia.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quibusdam! Incidunt corporis voluptatibus cumque, temporibus repellendus saepe officia voluptas nesciunt facilis facere doloribus sint quam nisi laudantium dolor veniam cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio itaque, ipsum rem aperiam voluptatum at nostrum adipisci veniam vitae esse quis officia est culpa ipsam libero natus? Maxime, ratione quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam ad dolore reiciendis, harum sapiente minima saepe quia ut itaque autem blanditiis labore cum porro, expedita nihil esse sit ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos inventore odio fuga aliquam fugiat, dolore optio qui voluptate, aperiam perferendis assumenda reiciendis amet repudiandae consectetur cumque nam iusto? A, mollitia.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quibusdam! Incidunt corporis voluptatibus cumque, temporibus repellendus saepe officia voluptas nesciunt facilis facere doloribus sint quam nisi laudantium dolor veniam cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio itaque, ipsum rem aperiam voluptatum at nostrum adipisci veniam vitae esse quis officia est culpa ipsam libero natus? Maxime, ratione quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam ad dolore reiciendis, harum sapiente minima saepe quia ut itaque autem blanditiis labore cum porro, expedita nihil esse sit ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos inventore odio fuga aliquam fugiat, dolore optio qui voluptate, aperiam perferendis assumenda reiciendis amet repudiandae consectetur cumque nam iusto? A, mollitia.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quibusdam! Incidunt corporis voluptatibus cumque, temporibus repellendus saepe officia voluptas nesciunt facilis facere doloribus sint quam nisi laudantium dolor veniam cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio itaque, ipsum rem aperiam voluptatum at nostrum adipisci veniam vitae esse quis officia est culpa ipsam libero natus? Maxime, ratione quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quam ad dolore reiciendis, harum sapiente minima saepe quia ut itaque autem blanditiis labore cum porro, expedita nihil esse sit ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos inventore odio fuga aliquam fugiat, dolore optio qui voluptate, aperiam perferendis assumenda reiciendis amet repudiandae consectetur cumque nam iusto? A, mollitia.</p>
 </body>
 </html>
